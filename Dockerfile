@@ -9,7 +9,7 @@ RUN apk update && apk add --update nodejs npm \
 
 RUN docker-php-ext-install pdo
 
-COPY --chown=www-data:www-data php-checkout-ui-cities /app
+COPY --chown=www-data:www-data . /app
 WORKDIR /app
 
 # Overwrite default nginx config
