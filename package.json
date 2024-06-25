@@ -17,8 +17,6 @@
   "author": "madhavinagpure",
   "private": true,
   "workspaces": [
-    "extensions/*",
-    "web",
-    "web/frontend"
+    "extensions/*"
   ]
 }
