@@ -13,15 +13,15 @@ COPY --chown=www-data:www-data . /app
 WORKDIR /app
 
 # Overwrite default nginx config
-#COPY web/nginx.conf /etc/nginx/nginx.conf
+COPY web/nginx.conf /etc/nginx/nginx.conf
 
 # Use the default production configuration
-#RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
-#RUN composer install
+RUN composer install
 
-#RUN cd frontend && npm install && npm run build
-RUN npm install && npm run build && npm run deploy -f
-#RUN composer build
+RUN cd frontend && npm install && npm run build
+# RUN npm install && npm run build && npm run deploy -f
+RUN composer build
 
-# ENTRYPOINT [ "/app/entrypoint.sh" ]
+ENTRYPOINT [ "/app/entrypoint.sh" ]
