@@ -24,4 +24,4 @@ WORKDIR /app
 RUN npm install && npm run build
 #RUN composer build
 
-#ENTRYPOINT [ "/app/entrypoint.sh" ]
+ENTRYPOINT [ "/app/entrypoint.sh" ]
