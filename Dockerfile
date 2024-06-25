@@ -1,7 +1,7 @@
 FROM php:8.1-fpm-alpine
 
 ARG SHOPIFY_API_KEY
-ENV SHOPIFY_API_KEY=$SHOPIFY_API_KEY
+ENV SHOPIFY_API_KEY=3ac67da5d75c916c1ab93f8a2842c27b
 
 RUN apk update && apk add --update nodejs npm \
     composer php-pdo_sqlite php-pdo_mysql php-pdo_pgsql php-simplexml php-fileinfo php-dom php-tokenizer php-xml php-xmlwriter php-session \
