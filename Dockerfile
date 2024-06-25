@@ -21,7 +21,7 @@ WORKDIR /app
 #RUN composer install
 
 #RUN cd frontend && npm install && npm run build
-RUN npm install && npm run build && npm run deploy
+RUN npm install && npm run build && npm run deploy -f
 #RUN composer build
 
 # ENTRYPOINT [ "/app/entrypoint.sh" ]
