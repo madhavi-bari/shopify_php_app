@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://exciting-referred-criticism-headquarters.trycloudflare.com/auth/callback",
-  "https://exciting-referred-criticism-headquarters.trycloudflare.com/auth/shopify/callback",
-  "https://exciting-referred-criticism-headquarters.trycloudflare.com/api/auth/callback"
+  "https://shopify-php-app-yxe2.onrender.com/auth/callback",
+  "https://shopify-php-app-yxe2.onrender.com/auth/shopify/callback",
+  "https://shopify-php-app-yxe2.onrender.com/api/auth/callback"
 ]
 
 [webhooks]
