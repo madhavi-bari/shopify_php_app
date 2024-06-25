@@ -19,8 +19,6 @@ COPY web/nginx.conf /etc/nginx/nginx.conf
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 RUN composer install
-RUN touch /app/storage/db.sqlite
-RUN chown www-data:www-data /app/storage/db.sqlite
 
 RUN cd frontend && npm install && npm run build
 RUN composer build
